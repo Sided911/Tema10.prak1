@@ -68,7 +68,20 @@ namespace ConsoleApp16
             {
                 Console.Write($"{elem}\t");
             }
+            //9. Сортировка элементов коллекции по возрастанию
+            Console.WriteLine();
+            list.Sort();
+            foreach (int elem in list)
+            {
+                Console.Write($"{elem}\t");
+            }
 
+            Console.WriteLine();
+            list.Reverse();
+            foreach (int elem in list)
+            {
+                Console.Write($"{elem}\t");
+            }
             Console.ReadLine();
         }
     }
